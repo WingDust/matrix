@@ -1,0 +1,24 @@
+* Catalog of Package
+** 外部应用
+   - W32-browser.el
+   - atomic-chrome
+** 文本模版
+   - Yasnippet
+** 文本检索
+   - swiper
+** 编辑模式
+   - evil
+** 文本操作
+   - evil-matchit
+** 文本翻译
+   - youdao-dictionary
+** 文学编程
+   - ob-deno
+   - ob-powershell.el
+   - ob-rust
+   - ob-python
+** org mode 格式
+   - valign
+** Reference
+   - [[https://liujiacai.net/blog/2021/05/05/emacs-package/][Emacs 包管理指南]]
+   - [[https://www.hopenglish.com/hope-tips-book-glossary][『封面、封底、目錄、序...』英文怎麼說？]]
