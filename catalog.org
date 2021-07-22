@@ -1,24 +1,28 @@
 * Catalog of Package
 ** 外部应用
-   - W32-browser.el
-   - atomic-chrome
+- W32-browser.el
+- atomic-chrome
 ** 文本模版
-   - Yasnippet
+- Yasnippet
 ** 文本检索
-   - swiper
+- swiper
 ** 编辑模式
-   - evil
+- evil
+** 补全框架
+- [[http://blog.lujun9972.win/emacs-document/blog/2018/06/04/ivy,-counsel-%E5%92%8C-swiper/index.html][1什么是Ivy?]]
 ** 文本操作
-   - evil-matchit
+- evil-matchit
 ** 文本翻译
-   - youdao-dictionary
+- youdao-dictionary
 ** 文学编程
-   - ob-deno
-   - ob-powershell.el
-   - ob-rust
-   - ob-python
+- ob-deno
+- ob-powershell.el
+- ob-rust
+- ob-python
 ** org mode 格式
-   - valign
+- valign
 ** Reference
-   - [[https://liujiacai.net/blog/2021/05/05/emacs-package/][Emacs 包管理指南]]
-   - [[https://www.hopenglish.com/hope-tips-book-glossary][『封面、封底、目錄、序...』英文怎麼說？]]
+- [[https://emacs-china.org/t/javascript-archive-contents/16730][如何用 JavaScript 解析 archive-contents 文件？]]
+- [[https://github.com/kiwanami/emacs-deferred][emacs-deferred]]
+- [[https://liujiacai.net/blog/2021/05/05/emacs-package/][Emacs 包管理指南]]
+- [[https://www.hopenglish.com/hope-tips-book-glossary][『封面、封底、目錄、序...』英文怎麼說？]]

@@ -2,3 +2,5 @@
 * Emacs buildin mode package [[https://wikemacs.org/wiki/Package.el][Package.el]] 
 
 * 获取 melpa 上的 archive-contents
+
+* [[https://github.com/raxod502/straight.el#features][straight.el]]
