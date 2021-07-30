@@ -26,3 +26,9 @@
 - [[https://github.com/kiwanami/emacs-deferred][emacs-deferred]]
 - [[https://liujiacai.net/blog/2021/05/05/emacs-package/][Emacs 包管理指南]]
 - [[https://www.hopenglish.com/hope-tips-book-glossary][『封面、封底、目錄、序...』英文怎麼說？]]
+- [[https://www.wemlion.com/post/firefox-webrender/][极速渲染引擎 WebRender 揭秘]]
+- [[https://emacs-china.org/t/topic/5442][分享一篇关于历代 Emacs 中 buffer 实现的论文。]]
+- 注释
+  + [[https://emacs-china.org/t/topic/8957][如何善用注释／文档中的代码？]]
+  + [[https://emacs-china.org/t/separedit-el-docstring/11196][separedit.el: 在单独的缓冲区编辑注释、docstring 或其中的代码块]]
+  
