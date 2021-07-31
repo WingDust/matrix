@@ -1,3 +1,5 @@
+#+filetags: :Project:Package-Mangement:
+
 * Catalog of Package
 ** 外部应用
 - W32-browser.el
@@ -28,7 +30,99 @@
 - [[https://www.hopenglish.com/hope-tips-book-glossary][『封面、封底、目錄、序...』英文怎麼說？]]
 - [[https://www.wemlion.com/post/firefox-webrender/][极速渲染引擎 WebRender 揭秘]]
 - [[https://emacs-china.org/t/topic/5442][分享一篇关于历代 Emacs 中 buffer 实现的论文。]]
+- [[https://emacs-china.org/t/1960-lisp/2542][1960年lisp原始论文]]
 - 注释
-  + [[https://emacs-china.org/t/topic/8957][如何善用注释／文档中的代码？]]
-  + [[https://emacs-china.org/t/separedit-el-docstring/11196][separedit.el: 在单独的缓冲区编辑注释、docstring 或其中的代码块]]
+  - [[https://emacs-china.org/t/topic/8957][如何善用注释／文档中的代码？]]
+  - [[https://emacs-china.org/t/separedit-el-docstring/11196][separedit.el: 在单独的缓冲区编辑注释、docstring 或其中的代码块]]
+- Markdown 
+  - [[https://zhuanlan.zhihu.com/p/99319314][Markdown语法及原理从入门到高级]]
+- 表达式
+  - [[https://codewords.recurse.com/issues/two/not-everything-is-an-expression][Not everything is an expression]]
+- 渲染
+  - [[https://github.com/skywind3000/RenderHelp][RenderHelp]]
+  - [[https://github.com/trishume/quickdown][quickdown]]
+  - [[https://mozillagfx.wordpress.com/2017/09/21/introduction-to-webrender-part-1-browsers-today/][Introduction to WebRender – Part 1 – Browsers today]]
+  - [[https://github.com/cisen/blog/issues/619][servo 源码学习相关 ]]
+- 文件结构
+  - [[https://emacs-china.org/t/monad/11280][关于“当前主流操作系统的文件管理器是否缺少Monad操作”的一点思考]]
+- VSCode 命令记录 
+  - show hover
+  - cursorTip
+  - tofile
+  - go to definition
+    
+
   
+* 脚本语言设计 
+** 无GC                                                                 :默认行为:
+** 缩进结构                                                          :默认行为:
+- 优化 类vim 缩进操作
+** 缩空格 补Tab                                                 :规范行为:必须:
+** 类型系统                                                     :规范行为:可选:
+** 所有权                                                       :规范行为:必须:
+** 字符串处理                                                   :规范行为:必须:
+- 替换
+- 包含
+- 分割
+- 拼接 
+** 定长可变                                                     :规范行为:可选:
+** 越界处理                                                     :规范行为:必须:
+** 同异顺序处理
+** 注释
+*** 文档注释                                                       :规范行为:可选:
+*** 模版注释                                        :规范行为:可选:编辑器行为:
+*** 集成，优化，合并 Markdown Org mode 
+** 宏                                                           :规范行为:扩展:
+** 不安全代码                                                        :规范行为:
+** 减少层级包装                                                      :规范行为:
+** 不使用闭合字符
+** elisp 的片段执行                                                :执行器行为:
+** 取除分号
+** 定义与调用的区分
+** 取消表达式嵌套
+#+begin_src 
+multi = ''
+;; qwerty
+`\[]-=/.,
+~!@#$%^&*()_+{}"|?><
+;; dvrak
+';,.-=/\[]`
+
+;; dvrak progarmming
+';,./@\-=[]`
+
+;; 执行器
+不运行字符串拼接
+
+;; 取消等于号用来表达赋值
+;; 变量赋值一需要指定变量的名字 二需要指定变量的值
+;; 常量是运行时的固定值，只有第一次有效定义
+;; 问题是我是否需要使用者的输入的值，而是开发者定义的值，只有最后一次有效修改
+;; 常量是一定要指定值，而变量是初始化居多，所以放弃变量初始化这个操作，而转变成函数结束返回值，也能做到取消类型多项共存
+;; 也就将 初始化-处理-结束 -> 处理-结束
+var name 'app'
+
+数组定义
+1,3,3
+
+;; 对数组指定范围处理
+
+;; 已知要被处理数据类型，传参做处理
+
+;; 函数定义
+fn foo app name:
+  app + name
+;; 函数调用
+foo app name
+foo 3 4 5  
+;; 函数方法共用调用方式，通过编辑器行为 语法高亮 区别开 方法 函数 异步 同步
+;; 通过公约注释对函数进行结构归属
+;; 减少变量名的定义
+'app'
+  .foo
+  ;Number.tonumber 2
+  .expect
+
+;; 排序函数，方法 标注出排序标准
+
+#+end_src
