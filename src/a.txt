@@ -1,0 +1,32 @@
+;;; 闭合符号是造成代码嵌套、公式嵌套罪魁祸首
+;;; Qwety Bad design for Symbol type
+;;;
+;;;
+
+
+;; 两个分号为一个行注释
+
+;; 自动方法归属注解为编辑器行为，分号是为了归属补全
+;Object.keys
+
+
+;; 字面量字符串
+;; s-qwe
+;; -qwe-
+'qwe'
+
+;; 函数定义
+fn foo a a
+  a + a
+
+;; 函数调用
+foo 2 2
+
+;; 函数装饰
+time
+fn foo a a
+  a + a
+
+;; 函数捕获参数
+'qwe'
+  .foo '2'
