@@ -26,7 +26,7 @@ use std::fs;
 
 
 #[allow(dead_code)]
-const  KEYWORDS: [&str; 2]  = ["fn","if"];
+const  KEYWORDS: [&str; 2]  = ["fn","if","and","or","not"];
 
 fn main() {
     parse();
