@@ -55,13 +55,26 @@
 - 类型系统
   - [[https://www.xmyipin.com/article/5124.html][Hindley-Milner 类型系统的根本性错误]]
 - Meterial Design
-- 找到最小的浏览器代码
+- 浏览器代码
+  - [[https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html][Let's build a browser engine!]]
+  - [[https://github.com/HiRoFa/spidermonkey_runtime][spidermonkey_runtime]]
 - 函数式编程
   - [[https://www.cnblogs.com/xiaonian8/p/13821551.html][Javascript之尾调用]]
+#+begin_quote
+还是想了想，只有取消 Html 这门语言，因为在越大型 Web,类Web 项目中，Html变得极为复杂，可读性极差，还有层层的嵌套结构。
+
+一个文件虚的地方，与实的地方
+样式变化，响应
+监听器逻辑，在回调中需要再处理监听器
+#+end_quote
+
     
     
 
   
+**  javascript 古怪
+- [[https://bonsaiden.github.io/JavaScript-Garden/zh/#other.timeouts][JavaScript 秘密花园]]
+** 
 * 脚本语言设计 
 
 ** 类elisp片段直接运行                                               :默认行为:
