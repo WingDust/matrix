@@ -34,6 +34,9 @@
 - 注释
   - [[https://emacs-china.org/t/topic/8957][如何善用注释／文档中的代码？]]
   - [[https://emacs-china.org/t/separedit-el-docstring/11196][separedit.el: 在单独的缓冲区编辑注释、docstring 或其中的代码块]]
+  - [[https://emacs-china.org/t/docstring-emacs/8182][Docstring 源自 Emacs]]
+  - [[https://emacs-china.org/t/topic/4464][运行 docstring 中的测试]]
+  - [[https://emacs-china.org/t/python-docstring-docstring/13087][分享：自动插入 python docstring 以及 docstring 高亮]]
 - Markdown 
   - [[https://zhuanlan.zhihu.com/p/99319314][Markdown语法及原理从入门到高级]]
 - 表达式
@@ -58,8 +61,30 @@
 - 浏览器代码
   - [[https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html][Let's build a browser engine!]]
   - [[https://github.com/HiRoFa/spidermonkey_runtime][spidermonkey_runtime]]
+  - [[https://juejin.cn/post/6844904021308735502][(1.6w字)浏览器灵魂之问，请问你能接得住几个？]]
 - 函数式编程
+  - [[https://juejin.cn/post/6969016132741103624][XDM，JS如何函数式编程？看这就够了！（二）]]
   - [[https://www.cnblogs.com/xiaonian8/p/13821551.html][Javascript之尾调用]]
+  - [-] [[https://wizardforcel.gitbooks.io/functional-light-js/content/ch2.html][JavaScript 轻量级函数式编程]] [1/10] [10%]
+    - [X] 第二章：函数基础
+      - arguments 是你输入的值（实参）， parameters 是函数中的命名变量（形参）
+      - 函数重载虽减少api数量，但减少了代码的可读性
+      - 减少使用返回值来控制，而是通过一行的最后返回
+      - 需要尽可能避免使用闭包来记录状态更改
+    - [ ] 第三章：管理函数的输入
+      - 偏应用：固定一个函数的一些参数，然后产生另一个更小元（元指函数形参的个数）的函数
+    - [ ] 第四章：组合函数
+    - [ ] 第五章：减少副作用
+    - [ ] 第六章：值的不可变性
+    - [ ] 第七章：闭包 vs 对象
+    - [ ] 第八章：列表操作
+    - [ ] 第九章：递归
+    - [ ] 第十章：异步的函数式
+    - [ ] 第十一章：融会贯通
+- 编译 
+  - 任务编译，编译阈值
+  - 闲时编译
+  - 请求加速编译
 #+begin_quote
 还是想了想，只有取消 Html 这门语言，因为在越大型 Web,类Web 项目中，Html变得极为复杂，可读性极差，还有层层的嵌套结构。
 
@@ -72,9 +97,13 @@
     
 
   
+**  sciter
+- [[https://github.com/sciter-sdk/rust-sciter][rust-sciter]]
+- [[https://www.zhihu.com/question/276815517][什么语言最适合做 GUI？]]
+- [[https://www.zhihu.com/question/37117129][做PC的客户端软件开发框架选择，sciter vs QT，用哪个好点？]]
 **  javascript 古怪
 - [[https://bonsaiden.github.io/JavaScript-Garden/zh/#other.timeouts][JavaScript 秘密花园]]
-** 
+- [[https://cuiqingcai.com/6808.html][JavaScript API 设计原则详解]]
 * 脚本语言设计 
 
 ** 类elisp片段直接运行                                               :默认行为:
@@ -110,6 +139,8 @@
 - 网页需要动态添加标签，所以它需要知道被添加的范围
 *** 双语注释
 ** 宏                                                           :规范行为:扩展:
+** 标准库
+*** 非空置空函数
 ** 不安全代码                                                        :规范行为:
 ** 减少层级包装                                                      :规范行为:
 ** 不使用闭合字符
@@ -172,4 +203,10 @@ foo 3 4 5
 - 只读区与可写区共存
 - 当前光标能在弹出框存在时进入弹出框
 - 直接进入其他区域
-  
+- [[https://emacs-china.org/t/topic/4038/40][这里有一个问题和你的好相似： 为什么Sketch的取色器会出现色差？ ]]
+* 图形程序接口
+- [[https://www.bgteach.com/article/176][图形程序接口知多少 | OpenGL、OpenCL、Vulkan、OpenGL ES、WebGL、Metal、Directx]]
+* 三维软件
+- [[https://www.bgteach.com/article/40][三维软件知多少 | Blender、3dsMax、Maya、Houdin、Cinema 4D、Clarisse、LightWave]]
+* 虚幻引擎 
+- [[https://www.oschina.net/news/156560/unreal-engine-4-27-released][虚幻引擎 (Unreal Engine) 4.27 发布]]
