@@ -57,6 +57,7 @@
   - [[https://emacs-china.org/t/topic/3604/6][Static Linux]]
 - 类型系统
   - [[https://www.xmyipin.com/article/5124.html][Hindley-Milner 类型系统的根本性错误]]
+  - [[https://effectivetypescript.com/2020/04/28/avoid-inferable/][Avoid Cluttering Your Code with Inferable Types]]
 - Meterial Design
 - 浏览器代码
   - [[https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html][Let's build a browser engine!]]
@@ -73,7 +74,10 @@
       - 需要尽可能避免使用闭包来记录状态更改
     - [ ] 第三章：管理函数的输入
       - 偏应用：固定一个函数的一些参数，然后产生另一个更小元（元指函数形参的个数）的函数
+        - [ ] bind 实现的关系
+      - Currie
     - [ ] 第四章：组合函数
+      - 
     - [ ] 第五章：减少副作用
     - [ ] 第六章：值的不可变性
     - [ ] 第七章：闭包 vs 对象
@@ -81,6 +85,14 @@
     - [ ] 第九章：递归
     - [ ] 第十章：异步的函数式
     - [ ] 第十一章：融会贯通
+  - [ ] [[https://github.com/masx200/event-emitter-target/blob/master/src/createEventEmitterTarget.ts][event-emitter-target]]
+- Org mode
+  - 我们不知道何时会出现一个需要被你去做事，要响应这个捕获机制
+
+- 编辑器
+  - [[https://github.com/atom-archive/xray][xray]]
+  - [[https://github.com/helix-editor/helix][helix]]
+  - [[https://github.com/onivim/oni2][oni2]]
 - 编译 
   - 任务编译，编译阈值
   - 闲时编译
@@ -93,6 +105,11 @@
 监听器逻辑，在回调中需要再处理监听器
 #+end_quote
 
+** 实现语言
+- [[https://qszhu.github.io/2021/08/22/parser-combinators.html][用TypeScript实现一门语言(1)——语法分析]]
+- [[https://segmentfault.com/a/1190000023392288][探索类型系统的底层 - 自己实现一个 TypeScript]]
+- AST
+  - [[https://zhuanlan.zhihu.com/p/30360931][ AST explorer 可视化工具]]
     
     
 
@@ -129,6 +146,10 @@
   - 最小到 0 
   - 增加上限
   - 只进行整数计算
+** true false  
+- true  与 1 对等
+- false 与 0 对等
+
 ** 定长可变                                                     :规范行为:可选:
 ** 越界处理                                                     :规范行为:必须:
 ** 同异顺序处理
