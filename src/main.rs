@@ -1,10 +1,9 @@
-
-/*\ ## 
+/*\ ##
 |*| - [paste](https://github.com/dtolnay/paste)
 |*| - [syn](https://github.com/dtolnay/syn)
 |*| - [docopt.rs](https://github.com/docopt/docopt.rs)
 |*| - [slag](https://github.com/mystor/slag)
-\*/ 
+\*/
 
 /*\ ## 设计语言
 |*| - [QinScript](https://github.com/Yaser-wyx/QinScript)
@@ -20,27 +19,22 @@
 |*| - [13 | LLVM：如何将自定义的语言编译到 WebAssembly？](https://time.geekbang.org/column/article/293272)
 |*| - [小.wasm尺寸](http://llever.com/rustwasm-book/print.html)
 |*| - [wasm的编译](https://github.com/XChainLab/documentation/blob/master/VM/evm-ewasm/wasm%E7%9A%84%E7%BC%96%E8%AF%91.md)
-\*/ 
+\*/
 
 use std::fs;
 
-
 #[allow(dead_code)]
-const  KEYWORDS: [&str; 2]  = ["fn","if","and","or","not"];
+const KEYWORDS: [&str; 2] = ["fn", "if", "and", "or", "not"];
 
 fn main() {
     parse();
 }
 
-
 #[allow(dead_code)]
-fn parse(){
-  let content = fs::read_to_string("./src/a.txt",).expect("");
-  println!("{}", content);
-  
+fn parse() {
+    let content = fs::read_to_string("./src/a.txt").expect("");
+    println!("{}", content);
 }
-
-
 
 // [1,2,3].foo.app
 // foo([1,2,3]).app()
@@ -57,7 +51,5 @@ macro_rules! dot {
         println!("wq");
     };
     // [How do I generalize a Rust macro over different types of functions?](https://stackoverflow.com/questions/35590450/how-do-i-generalize-a-rust-macro-over-different-types-of-functions)
-    ($var:ident$(.$fn:ident)+)=>{
-
-    }
+    ($var:ident$(.$fn:ident)+) => {};
 }

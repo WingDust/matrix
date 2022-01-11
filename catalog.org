@@ -66,7 +66,7 @@
 - 函数式编程
   - [[https://juejin.cn/post/6969016132741103624][XDM，JS如何函数式编程？看这就够了！（二）]]
   - [[https://www.cnblogs.com/xiaonian8/p/13821551.html][Javascript之尾调用]]
-  - [-] [[https://wizardforcel.gitbooks.io/functional-light-js/content/ch2.html][JavaScript 轻量级函数式编程]] [1/10] [10%]
+  - [-] [[https://wizardforcel.gitbooks.io/functional-light-js/content/ch2.html][JavaScript 轻量级函数式编程]] [2/3] [66%]
     - [X] 第二章：函数基础
       - arguments 是你输入的值（实参）， parameters 是函数中的命名变量（形参）
       - 函数重载虽减少api数量，但减少了代码的可读性
@@ -74,11 +74,17 @@
       - 需要尽可能避免使用闭包来记录状态更改
     - [ ] 第三章：管理函数的输入
       - 偏应用：固定一个函数的一些参数，然后产生另一个更小元（元指函数形参的个数）的函数
-        - [ ] bind 实现的关系
+        - [ ] bind 实现的
       - Currie
-    - [ ] 第四章：组合函数
-      - 
+        - 固定参数的柯里化
+    - [X] 第四章：组合函数
+      - compose
+        - 一个参数的函数
+        - 执行参数函数的顺序是 *从右往左*
+      - pipe
+        - 执行参数函数的顺序是 *从左往右*
     - [ ] 第五章：减少副作用
+      - 
     - [ ] 第六章：值的不可变性
     - [ ] 第七章：闭包 vs 对象
     - [ ] 第八章：列表操作
@@ -88,6 +94,8 @@
   - [ ] [[https://github.com/masx200/event-emitter-target/blob/master/src/createEventEmitterTarget.ts][event-emitter-target]]
 - Org mode
   - 我们不知道何时会出现一个需要被你去做事，要响应这个捕获机制
+- GUI 框架
+  - [[https://www.zhihu.com/question/396199869][如何评价 tauri？]]
 
 - 编辑器
   - [[https://github.com/atom-archive/xray][xray]]
@@ -109,7 +117,9 @@
 - [[https://qszhu.github.io/2021/08/22/parser-combinators.html][用TypeScript实现一门语言(1)——语法分析]]
 - [[https://segmentfault.com/a/1190000023392288][探索类型系统的底层 - 自己实现一个 TypeScript]]
 - AST
-  - [[https://zhuanlan.zhihu.com/p/30360931][ AST explorer 可视化工具]]
+  - [[https://zhuanlan.zhihu.com/p/30360931][AST explorer 可视化工具]]
+- [[https://yifei.me/note/268/][用 Python 编写一个模板引擎]]
+- [[https://github.com/gluon-lang/gluon][gluon]]
     
     
 
@@ -217,6 +227,7 @@ foo 3 4 5
 
 ;; 减少魔术字符串
 
+;; rust 属性宏的写法是一个很好方式，在上方添加行，而有一个缺点，就是不能指定范围，所以在添加行 这个操作再加个一个 空格+数字 来决定影响范围，而默认不写为影响一行
 #+end_src
 **  取消CSS的简写形式 增强语义
 **  取消隐性继承 如 =height:100%;=
